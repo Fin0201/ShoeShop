@@ -15,28 +15,3 @@ function Logout(){
     localStorage.removeItem("userInfo");
     window.location.href="index.html";
 }
-
-console.log(name, email, password, phone)
-
-
-
-if(name == "" || email == "" || password == "" || confirmpassword == "" || phone == ""){
-    alert("Incorrect");
-}
-
-else if (password != confirmpassword){
-    alert("Incorrect");
-}
-
-else{
-    var user = {
-        name:name,
-        email:email,
-        password:password,
-        phone:phone
-    }
-}
-
-
-localStorage.setItem("userInfo", JSON.stringify(user));
-window.location.href = "account.html";
